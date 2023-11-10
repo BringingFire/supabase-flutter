@@ -130,6 +130,7 @@ class SupabaseAuth with WidgetsBindingObserver {
           Platform.isIOS ||
           Platform.isMacOS ||
           Platform.isWindows ||
+          Platform.isLinux ||
           Platform.environment.containsKey('FLUTTER_TEST')) {
         await _instance._startDeeplinkObserver();
       }
